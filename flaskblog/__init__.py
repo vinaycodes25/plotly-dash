@@ -10,10 +10,12 @@ with app.app_context():
         
 
         # Import Dash application
-        from .plotlydash.dashboard import init_dashboard,init_choropleth
+        from .plotlydash.dashboard import init_dashboard,init_choropleth,init_two_pie_charts,init_neat_dash_board
 
         app = init_dashboard(app)
         app = init_choropleth(app)
+        app = init_two_pie_charts(app)
+        app  = init_neat_dash_board(app)
 
         # Compile static assets
         
